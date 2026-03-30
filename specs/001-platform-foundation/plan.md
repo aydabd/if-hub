@@ -1,6 +1,6 @@
 # Implementation Plan: Platform Foundation and Club Operations MVP
 
-**Branch**: `[001-platform-foundation]` | **Date**: 2026-03-30 | **Spec**: `/home/runner/work/if-hub/if-hub/specs/001-platform-foundation/spec.md`
+**Branch**: `[001-platform-foundation]` | **Date**: 2026-03-30 | **Spec**: `specs/001-platform-foundation/spec.md`
 
 ## Summary
 
