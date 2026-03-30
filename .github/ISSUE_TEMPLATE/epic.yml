@@ -1,0 +1,85 @@
+name: Epic
+about: Track a cross-cutting outcome with child stories and milestone alignment
+labels:
+  - epic
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for a milestone-sized outcome that groups multiple user stories.
+  - type: input
+    id: summary
+    attributes:
+      label: Epic summary
+      description: Describe the outcome this epic should deliver.
+      placeholder: Swedish-first identity foundation for secure member onboarding
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / opportunity
+      description: Explain why this epic matters.
+      placeholder: Clubs need a trusted sign-in foundation before onboarding, payments, and sensitive workflows can launch.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+      description: Describe the user or business result.
+      placeholder: Members and guardians can verify identity using trusted providers and the platform remains ready for future providers.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope
+      description: List the major slices that belong in this epic.
+      placeholder: |
+        - BankID adapter contract
+        - Freja+ adapter contract
+        - User/person identity linking
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: Note what should not be included.
+      placeholder: Full production implementation of future Nordic providers
+  - type: input
+    id: milestone
+    attributes:
+      label: Target milestone
+      description: Link the epic to a milestone from specs/backlog/milestones.md.
+      placeholder: M2 - Identity and Tenant Foundation
+    validations:
+      required: true
+  - type: textarea
+    id: stories
+    attributes:
+      label: Planned child stories
+      description: List the user stories expected under this epic.
+      placeholder: |
+        - Story: As a guardian, I can verify identity with BankID
+        - Story: As an admin, I can link a verified identity to a person record
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Define the conditions of satisfaction for the epic.
+      placeholder: |
+        - [ ] Provider contracts documented and approved
+        - [ ] Core identity entities agreed
+        - [ ] Compliance review captured in spec artifacts
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and risks
+      description: Capture upstream dependencies, compliance checks, or major risks.
+      placeholder: Requires managed identity vendor review and approved tenant access model
