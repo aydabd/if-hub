@@ -67,6 +67,23 @@ The repository includes GitHub Super-Linter for consistent code quality:
 - **Type safety**: Strictly enforced
 - **No trailing whitespace**
 
+
+## Spec-Driven Workflow
+
+This repository now uses GitHub Spec Kit for requirements-first delivery.
+
+- Core project rules live in `.specify/memory/constitution.md`
+- The initial MVP spec lives in `specs/001-platform-foundation/`
+- Planned MVP milestones live in `specs/backlog/milestones.md`
+- GitHub issue templates for epics and user stories live in `.github/ISSUE_TEMPLATE/`
+
+Recommended sequence for new work:
+
+1. Update or create the relevant `/specs/` artifact.
+2. Align the work to an epic and milestone.
+3. Break the approved spec into tasks.
+4. Start implementation only after the spec artifacts are approved.
+
 ## Contributing
 
 1. Create feature branch from `main`

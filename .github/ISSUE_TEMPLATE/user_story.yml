@@ -1,0 +1,81 @@
+name: User story
+about: Track a single independently testable slice of value
+labels:
+  - story
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for one independently testable story linked to an epic and milestone.
+  - type: input
+    id: epic
+    attributes:
+      label: Parent epic
+      description: Name or link the epic this story belongs to.
+      placeholder: E2 Identity and Access Foundation
+    validations:
+      required: true
+  - type: input
+    id: milestone
+    attributes:
+      label: Target milestone
+      description: Match the roadmap milestone for this story.
+      placeholder: M2 - Identity and Tenant Foundation
+    validations:
+      required: true
+  - type: input
+    id: persona
+    attributes:
+      label: Persona
+      description: Who benefits from this story?
+      placeholder: Guardian, coach, club administrator
+    validations:
+      required: true
+  - type: input
+    id: goal
+    attributes:
+      label: Goal
+      description: What does the persona want to achieve?
+      placeholder: Verify identity with BankID during onboarding
+    validations:
+      required: true
+  - type: input
+    id: benefit
+    attributes:
+      label: Benefit
+      description: Why does this matter?
+      placeholder: The club can trust the member identity before allowing sensitive actions
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: User story statement
+      description: Write the story in the standard format.
+      placeholder: As a guardian, I want to verify identity with BankID so that the club can trust my account during onboarding.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Add concrete Given/When/Then scenarios.
+      placeholder: |
+        1. Given a supported provider is available, when I start verification, then the session is tracked until completion.
+        2. Given verification succeeds, when the result is received, then the account can be linked to the correct person record.
+    validations:
+      required: true
+  - type: textarea
+    id: test_plan
+    attributes:
+      label: Independent test
+      description: Explain how the story can be validated on its own.
+      placeholder: Validate the provider lifecycle and identity-linking result without depending on payment or LOK flows.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List blocking dependencies, assumptions, or related artifacts.
+      placeholder: Depends on the approved identity spec and tenant role model
